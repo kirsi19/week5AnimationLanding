@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .header-container {
+    background-color: rgb(73, 116, 116);
+  }
+
+  header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(146, 146, 106, 0.541), rgba(255, 166, 0, 0.315)), 
+    url("../images/pexels-photo-3822140.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0%, 100% 86%, 5% 100%);
+    position: relative;
+    }
+
+    .text-box {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-30%, -50%);
+    }
+
+    .heading-primary {
+        text-transform: uppercase;
+    }
+
+    .heading-primary-main {
+      display: block;
+      font-size: 4rem;
+      letter-spacing: 1.1rem;
+      color: rgb(77, 71, 71);
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease out;
+    }
+
+    @keyframes moveInLeft {
+      0% {
+        transform: translateX(-300px);
+        opacity: 0;
+      }
+
+      80% {
+        transform: translateX(20px);
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+  }
+
+  .heading-primary-sub {
+    display: block;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    color: rgb(28, 46, 46);
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease out;
+  }
+
+  @keyframes moveInRight {
+    0% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+
+    80% {
+      transform: translateX(-20px);
+    }
+
+    100% {
+      transform: translateX(15px);
+      opacity: 1;
+    }
+  }
+
+  .btn-container {
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid white;
+    color: rgb(216, 207, 207); 
+    transition: all 0.3s;
+  }
+
+  .btn:hover {
+    background-color: rgba(100, 82, 82, 0.459);
+    color:white;
+    transform: translateY(-3px);
+  }
+
+  .btn:active {
+    transform: translateY(0);
+    }
+
+footer {
+  background-color: rgb(73, 116, 116);
+  color:rgb(174, 194, 197);
+  text-align: center;
+  animation-name: Appear;
+  animation-duration: 3s;
+  animation-timing-function: ease out;
+  font-family: 'Lato', sans-serif;
+}
+
+@keyframes Appear {
+  0% {
+        opacity: 0;
+  }
+
+  100% {
+        opacity: 1;
+  }
+}
+
